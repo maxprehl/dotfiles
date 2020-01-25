@@ -1,0 +1,35 @@
+"This is a comment
+"
+".vimrc - a basic file for newbies to start with
+"
+
+:filetype on
+:au FileType c,cpp,java set cindent
+
+	" Enable syntax highlighting
+syntax on
+
+" Uncomment this if you use a dark background on your terminal
+"set background=dark    " bg
+
+	" Set 'nocompatible' to ward off unexpected things that your distro might
+	" have made, as well as sanely reset options when re-sourcing .vimrc
+set nocompatible
+
+	" These next 2 should have the same value
+set tabstop=3
+set shiftwidth=3
+
+	
+set showmode
+set showmatch
+set textwidth=76
+set pastetoggle=<f2>
+set backspace=2
+	" Highlight search.  Comment out if that really annoys you.
+set hlsearch
+set ruler
+if &t_Co > 1
+	syntax enable
+endif
+

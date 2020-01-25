@@ -1,0 +1,8 @@
+[user]
+	name = Max Prehl
+	email = mwp52@drexel.edu
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	ci = commit
