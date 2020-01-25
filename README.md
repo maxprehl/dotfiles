@@ -3,11 +3,11 @@ Not sure whether this will make my life easier or more difficult.  Like how am i
 
 ## Todo
 
-[ ] Get Rid of Examples
-[ ] Compile all my dotfiles
-    [ ] tux
-    [ ] MAX-P65 Windows
-    [ ] MAX-P65 Ubuntu WSL
-    [ ] MAX-630i Windows
-    [ ] MAX-630i Ubuntu WSL
-[ ] Add comments
+- [ ] Get Rid of Examples
+- [ ] Compile all my dotfiles
+    - [ ] tux
+    - [ ] MAX-P65 Windows
+    - [ ] MAX-P65 Ubuntu WSL
+    - [ ] MAX-630i Windows
+    - [ ] MAX-630i Ubuntu WSL
+- [ ] Add comments
