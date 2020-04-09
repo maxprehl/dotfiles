@@ -1,0 +1,1429 @@
+﻿# For documentation, see http://www.sumatrapdfreader.org/settings3.2.html
+
+MainWindowBackground = #424742
+EscToExit = false
+ReuseInstance = false
+UseSysColors = false
+RestoreSession = true
+
+FixedPageUI [
+	TextColor = #d5d5d5
+	BackgroundColor = #424742
+	SelectionColor = #f5fc0c
+	WindowMargin = 2 4 2 4
+	PageSpacing = 4 4
+]
+EbookUI [
+	FontName = Arial
+	FontSize = 12.5
+	TextColor = #d5d5d5
+	BackgroundColor = #424742
+	UseFixedPageUI = true
+]
+ComicBookUI [
+	WindowMargin = 0 0 0 0
+	PageSpacing = 4 4
+	CbxMangaMode = false
+]
+ChmUI [
+	UseFixedPageUI = true
+	FontSize = 12.5
+	TextColor = #d5d5d5
+	BackgroundColor = #424742
+]
+ExternalViewers [
+]
+ShowMenubar = true
+ReloadModifiedDocuments = true
+FullPathInTitle = false
+ZoomLevels = 8.33 12.5 18 25 33.33 50 66.67 75 100 125 150 200 300 400 600 800 1000 1200 1600 2000 2400 3200 4800 6400
+ZoomIncrement = 0
+
+PrinterDefaults [
+	PrintScale = shrink
+]
+ForwardSearch [
+	HighlightOffset = 0
+	HighlightWidth = 15
+	HighlightColor = #6581ff
+	HighlightPermanent = false
+]
+CustomScreenDPI = 0
+
+RememberStatePerDocument = true
+UiLanguage = en
+ShowToolbar = true
+ShowFavorites = false
+AssociateSilently = false
+CheckForUpdates = true
+RememberOpenedFiles = true
+EnableTeXEnhancements = false
+DefaultDisplayMode = automatic
+DefaultZoom = fit page
+WindowState = 2
+WindowPos = -1022 -503 1080 1274
+ShowToc = true
+SidebarDx = 260
+TocDy = 0
+ShowStartPage = true
+UseTabs = true
+
+FileStates [
+	[
+		FilePath = G:\Drexel\INFO310\Helen Sharp, Jenny Preece, Yvonne Rogers - Interaction Design_ Beyond Human-Computer Interaction (2019, Wiley).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = true
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MATH410\assn1\Rplots.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MATH410\Chapter2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 12
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MATH410\Chapter1.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 177
+		PageNo = 23
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MATH410\Assn1\Lab1.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 220
+		PageNo = 3
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MUSC118\New World score and parts 06-Apr-2020 12-55-49.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 5
+		UseDefaultState = false
+		DisplayMode = continuous facing
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1022 -503 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\MATH410\Math 410 syllabus.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 611
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 799 -8 1080 1274
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\INFO310\W1-Intro2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1903 -509 1943 1260
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\INFO310\W1-Agenda+Syllabus2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 250
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1903 -509 1943 1260
+		ShowToc = false
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\COM270\Peter W. Cardon - Business Communication_ Developing Leaders for a Networked World (2017, McGraw-Hill Education).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 35
+		PageNo = 31
+		Zoom = fit content
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1903 -509 1943 1260
+		ShowToc = true
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 8 9 10
+	]
+	[
+		FilePath = G:\Drexel\SE310\Alan Shalloway, James R. Trott - Design patterns explained a new perspective on object-oriented design-Addison-Wesley Professional (2004).chm
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 21
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1903 -509 1943 1260
+		ShowToc = true
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 5 7 14 34 48 110 131 164 183 224
+	]
+	[
+		FilePath = G:\Drexel\SE310\Erich Gamma_ Ralph Johnson_ John Vlissides_ Richard Helm - Design Patterns_ Elements of Reusable Object-Oriented Software (1994, Addison-Wesley Professional).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -1105 -507 1062 1432
+		ShowToc = true
+		SidebarDx = 260
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week4\wk4-slides-processes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 557 -17 1062 1432
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS260\Alfred V. Aho - Data Structures and Algorithms.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 363
+		PageNo = 94
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1432
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS260\Wilf-AlgoComp.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 788
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1432
+		ShowToc = false
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week5\wk5-slides-signals.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week5\wk5-slides-pipes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week5\wk5-slides-NonlocalJumps.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week7\wk6-slides-networks.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week9\wk9-slides-threads.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week9\wk9-slides-EchoServerThreaded.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\week9\wk9-slides-caches.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\cs283-1920wi-syllabus-v3.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = G:\Drexel\CS283\Bryant and O'Hallaron - Computer Systems_ A Programmer's Perspective-Pearson (2015).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 657
+		PageNo = 1006
+		Zoom = fit content
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 17 83 130 158
+	]
+	[
+		FilePath = G:\Drexel\CS283\Bryant and O’Hallaron - Computer Systems_ A Programmer’s Perspective-Pearson (2015).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 218
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week10\wk10-slides-virtualmem.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week10\wk10-slides-Linking.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week9\wk9-slides-caches.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week9\wk9-slides-threads.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week8\wk8-slides-threads.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week6\wk6-slides-networks.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week5\wk5-slides-signals.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week5\wk5-slides-pipes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week5\wk5-slides-NonlocalJumps.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\cs283-1920wi-syllabus-v3.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 791
+		PageNo = 3
+		Zoom = 125
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Bryant and O'Hallaron - Computer Systems_ A Programmer's Perspective-Pearson (2015).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 757
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = false
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 17 83 102 130
+	]
+	[
+		FilePath = B:\Drexel\CS283\week4\wk4-slides-processes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1064 -481 1062 1087
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Bryant and O’Hallaron - Computer Systems_ A Programmer’s Perspective-Pearson (2015).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 34
+		PageNo = 1048
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1068 -460 1062 1177
+		ShowToc = true
+		SidebarDx = 285
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 44 604 646 812
+	]
+	[
+		FilePath = B:\Drexel\CS283\week7\wk6-slides-networks.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1068 -460 1062 937
+		ShowToc = true
+		SidebarDx = 269
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week1\L1\L1-Make-GDB-V-solutions-part1.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 1085
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1068 -460 1062 937
+		ShowToc = true
+		SidebarDx = 269
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week1\L1\L1-Make-GDB-V-solutions-part2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1071 -465 1061 1236
+		ShowToc = false
+		SidebarDx = 269
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\manual_gdb.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = 87 48
+		PageNo = 71
+		Zoom = fit content
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1071 -465 1061 1236
+		ShowToc = true
+		SidebarDx = 269
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week9\H7\H7-CH12.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -1068 -460 1062 937
+		ShowToc = false
+		SidebarDx = 269
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week7\L3\L3-HTTP-Client-Server.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 246 -10 2172 1135
+		ShowToc = false
+		SidebarDx = 338
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week6\H5\H5-CH08.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 58
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 246 -10 2172 1135
+		ShowToc = false
+		SidebarDx = 338
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\manuial_libc.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 375
+		PageNo = 446
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = true
+		SidebarDx = 338
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 71 77 280 282 297
+	]
+	[
+		FilePath = B:\Drexel\CS283\week1\L1\gdb\gdbnotes-x86-64.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 13
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = false
+		SidebarDx = 271
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\cs283-1920wi-introduction-v2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = false
+		SidebarDx = 271
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week3\H3\H3-fileIO.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -2947 -14 558 844
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week4\H4\H4-CH08.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1094 -14 834 1080
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Kerrisk - The Linux Programming Interface.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week2\H2\H2-CH10.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1094 -14 834 1080
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Kernighan and Ritchie - C Programming Language (1988, Prentice Hall).djvu
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 677
+		PageNo = 17
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Kernighan and Ritchie - The C Programming Language (2nd Edition) (1988, Prentice Hall).mobi
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous book view
+		ScrollPos = -1 -1
+		PageNo = 48
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS265\The.Practice.of.Programming.-.B.W..Kernighan..pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 545
+		PageNo = 12
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week2\H2-CH10.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\W. Richard Stevens, Stephen A. Rago - Advanced Programming in the UNIX (R) Environment-Addison-Wesley Professional (2005).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 36
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 19 33 45 64
+	]
+	[
+		FilePath = B:\Drexel\CS283\[Addison-Wesley Professional Computing Series] W. Richard Stevens, Stephen A. Rago - Advanced Programming in the UNIX Environment (2005, Addison-Wesley Professional).chm
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = 0 0
+		PageNo = 27
+		Zoom = 125
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 204
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\Computer_Systems-A_Programmers_Perspective-2e.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 546
+		PageNo = 904
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 7 27 96 158 169 181 185
+	]
+	[
+		FilePath = B:\Drexel\CS283\Randal E. Bryant, David R. OÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢Hallaron - Computer Systems_ A ProgrammerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Perspective-Pearson (2015).epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = book view
+		ScrollPos = -1 -1
+		PageNo = 1318
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 9316544
+		TocState = 812 813 819 834
+	]
+	[
+		FilePath = B:\Drexel\CS283\Randal E. Bryant, David R. O'Hallaron - Computer Systems_ A Programmer's Perspective-Pearson (2015).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = facing
+		ScrollPos = -1 -1
+		PageNo = 935
+		Zoom = fit content
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 130 131
+	]
+	[
+		FilePath = B:\Drexel\CS283\week4\processes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -2947 -14 558 844
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week3\files.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -2947 -14 558 844
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week2\files.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 44
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = true
+		SidebarDx = 271
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week1\gcc.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = true
+		SidebarDx = 271
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\week1\01-MakeGdbValgrind.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -2947 -14 558 844
+		ShowToc = true
+		SidebarDx = 344
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = B:\Drexel\CS283\libc.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = true
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 653
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 671 -8 558 844
+		ShowToc = true
+		SidebarDx = 271
+		DisplayR2L = false
+		ReparseIdx = 0
+		TocState = 247 252
+	]
+]
+SessionData [
+]
+TimeOfLastUpdateCheck = 30805474 -46983722
+OpenCountWeek = 483
+
+# Settings after this line have not been recognized by the current version
