@@ -1,9 +1,11 @@
 # dotfiles
-Not sure whether this will make my life easier or more difficult.  Like how am i gonna push to this repo?  Make a git repository in the root of my home directory?  smh.
+
+Slowly but surely I will learn what all of these dots mean.
+
 
 ## Todo
 
-- [ ] Get Rid of Examples
+- [ ] Organize Examples
 - [ ] Compile all my dotfiles
     - [ ] tux
     - [ ] MAX-P65 Windows
@@ -11,3 +13,7 @@ Not sure whether this will make my life easier or more difficult.  Like how am i
     - [ ] MAX-630i Windows
     - [ ] MAX-630i Ubuntu WSL
 - [ ] Add comments
+- [ ] Choose an installation method
+    - [ ] shell script
+    - [ ] rsync
+    - [ ] git bare repo
