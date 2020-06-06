@@ -17,3 +17,5 @@ Slowly but surely I will learn what all of these dots mean.
     - [ ] shell script
     - [ ] rsync
     - [ ] git bare repo
+    - [ ] https://www.atlassian.com/git/tutorials/dotfiles
+    - [ ] https://dotfiles.github.io/
