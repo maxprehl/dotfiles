@@ -43,7 +43,9 @@ The way to set up a new system follow these instructions:
 
 ## THERE ARE MULTIPLE BRANCHES OF THIS REPO
 
-The `master` branch is designed for use in Windows Subsystem for Linux environments and enables both Linux and Windows configuration from one place.
+The `master` branch is meant for use in it's own proper working repository to compare example files, handle merging from the other branches, etc. 
+
+Use the `prod` branch for use in Windows Subsystem for Linux environments. This enables both Linux and Windows configuration from one place.
 
 Use the `linux` branch for linux-only systems (bare metal installs, VM's, etc)
 
@@ -72,3 +74,4 @@ Use the `windows` branch for windows-only systems (although I don't know why you
     - [ ] MAX-630i Ubuntu WSL
 - [ ] Add comments
 - [ ] Create one-liner for the git bare repo setup and cloning
+
