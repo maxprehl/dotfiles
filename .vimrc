@@ -2,7 +2,7 @@
 " .vimrc
 "
 " MAINTAINER: Max Prehl
-" UPDATED: Jul. 6, 2020
+" UPDATED: Jul. 28, 2020
 "
 " I've taken from several sources, and did my own stuff.  
 " Some inspiration:
@@ -11,7 +11,7 @@
 " 
 " Bram Moolenaar <Bram@vim.org>
 " 
-" Kurt Schmidt <kschmidt@drexel.edu>
+" Kurt Schmidt <kschmidt>
 "
 " Derek Taylor (DistroTube) 
 " <https://gitlab.com/dwt1/dotfiles/-/blob/master/.vimrc>
@@ -19,6 +19,11 @@
 " Max Cantor (thoughtbot, Vim without plugins)
 " <https://www.youtube.com/watch?v=XA2WjJbmmoM>
 " <https://github.com/changemewtf/no_plugins>
+"
+" ThePrimeagen
+" <https://www.youtube.com/watch?v=n9k9scbTuvQ>
+" <https://github.com/erkrnt/awesome-streamerrc/tree/master/ThePrimeagen>
+
 
 """"""""""" From Bram 
 " When started as "evim", evim.vim will already have done these settings.
@@ -35,9 +40,9 @@ endif
 
 
 """"""""""" vim.wikia 
-"------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Features {{{1
-"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
 
@@ -90,9 +95,9 @@ endif
 
 
 """"""""""" vim.wikia 
-"------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Must have options {{{1
-"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These are highly recommended options.
  
 " Vim with default settings does not allow easy switching between multiple files
@@ -191,11 +196,48 @@ endif
 " script, <http://www.vim.org/scripts/script.php?script_id=1876>.
 " set nomodeline
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display / Interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""" vim.wiki 
-"------------------------------------------------------------
+" Display line numbers on the left
+set number
+
+""""""""""" vim.wiki 
+" Use visual bell instead of beeping when doing something wrong
+set visualbell
+ 
+""""""""""" vim.wiki 
+" And reset the terminal code for the visual bell. If visualbell is set, and
+" this line is also included, vim will neither flash nor beep. If visualbell
+" is unset, this does nothing.
+" set t_vb=
+
+""""""""""" vim.wiki, Bram 
+" Display the cursor position on the last line of the screen or in the status
+" line of a window
+" show the cursor position all the time
+set ruler
+ 
+""""""""""" vim.wiki 
+" Always display the status line, even if only one window is displayed
+set laststatus=2
+
+""""""""""" vim.wiki 
+" Set the command window height to 2 lines, to avoid many cases of having to
+" "press <Enter> to continue"
+set cmdheight=2
+
+""""""""""" ThePrimeagen 
+" Visual differentiation for the 80 (and 120) character mark
+set colorcolumn=80,120
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+""""""""""" vim.wiki 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Usability options {{{1
-"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These are options that users frequently set in their .vimrc. Some of them
 " change Vim's behaviour in ways which deviate from the true Vi way, but
 " which are considered to add usability. Which, if any, of these options to
@@ -222,30 +264,10 @@ set autoindent
 " coming from other editors would expect.
 set nostartofline
  
-""""""""""" vim.wiki, Bram 
-" Display the cursor position on the last line of the screen or in the status
-" line of a window
-" show the cursor position all the time
-set ruler
- 
-""""""""""" vim.wiki 
-" Always display the status line, even if only one window is displayed
-set laststatus=2
- 
 """"""""""" vim.wiki 
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
- 
-""""""""""" vim.wiki 
-" Use visual bell instead of beeping when doing something wrong
-set visualbell
- 
-""""""""""" vim.wiki 
-" And reset the terminal code for the visual bell. If visualbell is set, and
-" this line is also included, vim will neither flash nor beep. If visualbell
-" is unset, this does nothing.
-" set t_vb=
  
 """"""""""" vim.wiki 
 " Enable use of the mouse for all modes
@@ -254,15 +276,6 @@ set visualbell
 """"""""""" Derek
 " Mouse Scrolling
 set mouse=nicr
- 
-""""""""""" vim.wiki 
-" Set the command window height to 2 lines, to avoid many cases of having to
-" "press <Enter> to continue"
-set cmdheight=2
- 
-""""""""""" vim.wiki 
-" Display line numbers on the left
-set number
  
 """"""""""" vim.wiki, Bram 
 " Quickly time out on keycodes, but never time out on mappings
@@ -275,10 +288,12 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 
 
+ 
+
 """"""""""" vim.wiki 
-"------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation options {{{1
-"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation settings according to personal preference.
  
 """"""""""" vim.wiki 
@@ -299,9 +314,9 @@ set smarttab
 "set tabstop=4
  
 
-"------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings {{{1
-"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Useful mappings
  
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
@@ -313,9 +328,9 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 
 
-"------------------------------------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The Rest of Bram's Defaults {{{1
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set history=200		" keep 200 lines of command line history
 
 " Show @@@ in the last line if it is truncated.
@@ -354,10 +369,10 @@ if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
   set backup		" keep a backup file (restore to previous version)
-  set backupdir=~/tmp/vim/.backup//
+  set backupdir=~/.vim/.backup//
   if has('persistent_undo')
     set undofile	" keep an undo file (undo changes after closing)
-    set undodir=~/tmp/vim/.undo//
+    set undodir=~/.vim/.undo//
   endif
 endif
 

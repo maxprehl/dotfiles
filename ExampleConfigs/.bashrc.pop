@@ -1,14 +1,3 @@
-# .bashrc
-#
-# MAINTAINER: Max Prehl
-# UPDATED: Jul. 28, 2020
-#
-# Inspired by:
-#
-# The Ubuntu default
-# Kurt Schmidt <kschmidt>
-# Derek Taylor <https://gitlab.com/dwt1/dotfiles/-/blob/master/.bashrc> 
-#
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -96,27 +85,12 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-
-############ ALIASES ############
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-# -a, --all             show hidden files
-# -A                    show hidden files (except . and ..)
-# -C                    list files by columns
-# -F, --classify        add classifying text indicator
-# -X                    sort by file extension
-alias ll='ls -alFX'
+alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CFlX'
-
-# Interactive Mode - confirm before delete/overwriting
-alias rm="rm -i"
-alias mv="mv -i"
-alias cp="cp -i"
-# Human Readabble - show file sizes in human readable format
-alias df="df -h"
+alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -141,14 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-### SET VI MODE IN BASH SHELL
-# comment out to use emacs mode (the default)
-set -o vi
-
-# Check VIM backup and undo directories exist, if not: create them
-[ -d "/home/$USER/.vim/.backup" ] || (mkdir -p ~/.vim/.backup/ ; echo "~/.vim/.backup/ created")
-[ -d "/home/$USER/.vim/.undo" ] || (mkdir -p ~/.vim/.undo/ ; echo "~/.vim/.undo/ created")
-
-# Welcome command
-neofetch
