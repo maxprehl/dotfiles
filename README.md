@@ -76,5 +76,6 @@ Use the `windows` branch for windows-only systems (although I don't know why you
     - [ ] Software install script using Chocolatey (or winget)
 
 - [ ] Linux
+    - [x] Seperate linux-only branch
     - [ ] Curate software list for Linux installs
     - [ ] Software install script (diff package managers tho??)
