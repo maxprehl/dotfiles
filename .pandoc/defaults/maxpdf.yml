@@ -1,0 +1,26 @@
+to: pdf
+
+standalone: true
+self-contained: true
+
+metadata:
+  lang: en-GB
+  dir: ltr
+  author-meta:
+  - Max Prehl
+metadata-files:
+- max-latex-variables.yml
+
+wrap: auto
+columns: 78
+dpi: 72
+
+number-sections: false
+
+shift-heading-level-by: 1
+
+highlight-style: my2.theme
+
+reference-links: true
+# block, section, or document
+reference-location: block

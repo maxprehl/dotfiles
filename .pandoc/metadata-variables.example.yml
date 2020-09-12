@@ -1,0 +1,68 @@
+# Metadata Variables
+
+# title, author, date
+# allow identification of basic aspects of the document. Included in PDF metadata through LaTeX and ConTeXt. These can be set through a pandoc title block, which allows for multiple authors, or through a YAML metadata block:
+
+author:
+- Aristotle
+- Peter Abelard
+
+# Note that if you just want to set PDF or HTML metadata, without including a title block in the document itself, you can set the title-meta, author-meta, and date-meta variables. 
+# (By default these are set automatically, based on title, author, and date.)
+
+# subtitle
+# document subtitle, included in HTML, EPUB, LaTeX, ConTeXt, and docx documents
+
+# abstract
+# document summary, included in LaTeX, ConTeXt, AsciiDoc, and docx documents
+
+# keywords
+# list of keywords to be included in HTML, PDF, ODT, pptx, docx and AsciiDoc metadata; repeat as for author, above
+
+# subject
+# document subject, included in ODT, PDF, docx and pptx metadata
+
+# description
+# document description, included in ODT, docx and pptx metadata. Some applications show this as Comments metadata.
+
+# category
+# document category, included in docx and pptx metadata
+
+# Additionally, any root-level string metadata, not included in ODT, docx or pptx metadata is added as a custom property. The following YAML metadata block for instance:
+# will include title, author and description as standard document properties and subtitle as a custom property when converting to docx, ODT or pptx.
+
+title:  'This is the title'
+subtitle: "This is the subtitle"
+author:
+- Author One
+- Author Two
+description: |
+    This is a long
+    description.
+
+    It consists of two paragraphs
+
+
+# Language variables
+
+# lang
+# identifies the main language of the document using IETF language tags (following the BCP 47 standard), such as en or en-GB. The Language subtag lookup tool can look up or verify these tags. This affects most formats, and controls hyphenation in PDF output when using LaTeX (through babel and polyglossia) or ConTeXt.
+
+# Use native pandoc Divs and Spans with the lang attribute to switch the language:
+# Ex. Text in the main document language (British English).
+
+# ::: {lang=fr-CA}
+# > Cette citation est écrite en français canadien.
+# :::
+
+# More text in English. ['Zitat auf Deutsch.']{lang=de}
+
+lang: en-GB
+
+dir: ltr
+
+# the base script direction, either rtl (right-to-left) or ltr (left-to-right).
+
+# For bidirectional documents, native pandoc spans and divs with the dir attribute (value rtl or ltr) can be used to override the base direction in some output formats. This may not always be necessary if the final renderer (e.g. the browser, when generating HTML) supports the Unicode Bidirectional Algorithm.
+
+# When using LaTeX for bidirectional documents, only the xelatex engine is fully supported (use --pdf-engine=xelatex).
