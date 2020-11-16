@@ -7,18 +7,18 @@ Slowly but surely I will learn what all of these dots mean.
 The method for using these dotfiles is the [git "bare" repo](https://www.atlassian.com/git/tutorials/dotfiles).
 
 This way the working tree for the git repo can be in the HOME directory, 
-while the git directory can be stored somewhere else. (in our case $HOME/dotfiles.git)
+while the git directory can be stored somewhere else. (in our case $HOME/.dotfiles.git)
 
 The way to set up a new system follow these instructions:
 
 1. Make sure git is installed.
 2. Make sure you're working in your $HOME directory.
 3. Add the `git df` alias to git: 
-    * `git config --global alias df="!git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME"`
-    * (or use my [.gitconfig](./.gitconfig) `wget https://raw.githubusercontent.com/maxprehl/dotfiles/master/.gitconfig`)
+    * `git config --global alias df="!git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
+    * (or use my [.gitconfig](./.gitconfig) `curl https://raw.githubusercontent.com/maxprehl/dotfiles/master/.gitconfig -o .gitconfig`)
 4. Clone the repo's git directory ONLY:
-    * `git df clone --bare https://github.com/maxprehl/dotfiles.git $HOME/dotfiles.git`
-    * You should now have a new folder in your home directory called `dotfiles.git`
+    * `git df clone --bare https://github.com/maxprehl/.dotfiles.git $HOME/.dotfiles.git`
+    * You should now have a new folder in your home directory called `.dotfiles.git`
     * The only thing in there are some other directories that git will use to keep track of the repos.
 5. Set the repo to NOT show untracked files
     * `git df config --local status.showUntrackedFiles no`
