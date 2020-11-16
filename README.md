@@ -17,7 +17,7 @@ The way to set up a new system follow these instructions:
     * `git config --global alias df="!git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
     * (or use my [.gitconfig](./.gitconfig) `curl https://raw.githubusercontent.com/maxprehl/dotfiles/master/.gitconfig -o .gitconfig`)
 4. Clone the repo's git directory ONLY:
-    * `git df clone --bare https://github.com/maxprehl/.dotfiles.git $HOME/.dotfiles.git`
+    * `git df clone --bare https://github.com/maxprehl/dotfiles.git $HOME/.dotfiles.git`
     * You should now have a new folder in your home directory called `.dotfiles.git`
     * The only thing in there are some other directories that git will use to keep track of the repos.
 5. Set the repo to NOT show untracked files
