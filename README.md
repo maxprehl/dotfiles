@@ -50,6 +50,8 @@ Use the `wsl` branch for use in Windows Subsystem for Linux environments. This e
 
 Use the `linux` branch for linux-only systems (bare metal installs, VM's, etc)
 
+Use the `mac` branch for MacOS systems
+
 Use the `windows` branch for windows-only systems (although I don't know why you would lol) Also check out the [windows specific instructions](./WindowsConfigs/README.md)
 
 ## Todo
