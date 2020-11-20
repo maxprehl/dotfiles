@@ -1,0 +1,43 @@
+$include /etc/inputrc
+
+# bash READLINE
+# https://wiki.archlinux.org/index.php/Readline
+
+set completion-ignore-case On
+set show-all-if-ambiguous On
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+### SET VI MODE IN ALL SHELLS
+# comment out to use emacs mode (the default)
+# set editing-mode vi
+
+$if mode=vi
+
+set show-mode-in-prompt on
+$if term=linux
+	set vi-ins-mode-string \1\e[?0c\2
+	set vi-cmd-mode-string \1\e[?8c\2
+$else
+	set vi-ins-mode-string \1\e[6 q\2
+	set vi-cmd-mode-string \1\e[2 q\2
+$endif
+
+set keymap vi-command
+# these are for vi-command mode
+Control-l: clear-screen
+Control-a: beginning-of-line
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+j: history-search-forward
+k: history-search-backward
+
+set keymap vi-insert
+# these are for vi-insert mode
+Control-l: clear-screen
+Control-a: beginning-of-line
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+$endif
