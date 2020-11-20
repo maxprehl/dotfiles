@@ -24,6 +24,7 @@ alias \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
+if_os darwin && alias rm="rm -iv"
 # alias ll='ls -FGlAhp' # Preferred 'ls' implementation
 # alias lsa='ls -al' # Show all file information
 # alias less='less -FSRXc' # Preferred 'less' implementation

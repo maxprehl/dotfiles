@@ -6,6 +6,9 @@
 # This is a bash profile for Mac OSX (10.15)
 # Environment variables are set here
 
+# export NODE_ENV=local
+# export HOSTNAME=localhost
+
 # proxy
 # export HTTPS_PROXY=
 # export HTTP_PROXY=
@@ -21,3 +24,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 # export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi

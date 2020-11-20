@@ -74,8 +74,8 @@ if ! shopt -oq posix; then
 fi
 
 # Check VIM backup and undo directories exist, if not: create them
-[ -d "/home/$USER/.vim/.backup" ] || (mkdir -p ~/.vim/.backup/ ; echo "~/.vim/.backup/ created")
-[ -d "/home/$USER/.vim/.undo" ] || (mkdir -p ~/.vim/.undo/ ; echo "~/.vim/.undo/ created")
+[ -d "$HOME/.vim/.backup" ] || (mkdir -p ~/.vim/.backup/ ; echo "~/.vim/.backup/ created")
+[ -d "$HOME/.vim/.undo" ] || (mkdir -p ~/.vim/.undo/ ; echo "~/.vim/.undo/ created")
 
 ### SET VI MODE IN BASH SHELL
 # comment out to use emacs mode (the default)
