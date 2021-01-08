@@ -79,7 +79,7 @@ fi
 
 ### SET VI MODE IN BASH SHELL
 # comment out to use emacs mode (the default)
-# set -o vi
+set -o vi
 
 # Welcome command
 if [ -x /usr/bin/neofetch ]; then
