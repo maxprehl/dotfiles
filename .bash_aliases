@@ -55,6 +55,7 @@ if_nix bsd &&
 alias \
     ll='ls -al' \
     g="git" \
+    nr="npm run" \
     path='echo -e ${PATH//:/\\n}' \
     commasplit='awk -v RS=, {$0}' \
     alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
