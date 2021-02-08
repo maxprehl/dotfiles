@@ -1,0 +1,118 @@
+# Variables for LaTeX
+# Pandoc uses these variables when creating a PDF with a LaTeX engine.
+
+# Layout
+
+# option for document class, e.g. oneside; repeat for multiple options:
+classoption:
+- twocolumn
+- landscape
+
+# usually one of the standard classes, article, book, and report; the KOMA-Script equivalents, scrartcl, scrbook, and scrreprt, which default to smaller margins; or memoir
+documentclass: article
+
+# option for geometry package, e.g. margin=1in; repeat for multiple options:
+geometry:
+- margin=1in
+- top=30mm
+- left=20mm
+- heightrounded
+
+# option for hyperref package, e.g. linktoc=all; repeat for multiple options:
+hyperrefoptions:
+- linktoc=all
+- pdfwindowui
+- pdfpagemode=FullScreen
+
+# indent
+# uses document class settings for indentation (the default LaTeX template otherwise removes indentation and adds space between paragraphs)
+
+# linestretch
+# adjusts line spacing using the setspace package, e.g. 1.25, 1.5
+
+# margin-left, margin-right, margin-top, margin-bottom
+# sets margins if geometry is not used (otherwise geometry overrides these)
+
+# pagestyle
+# control \pagestyle{}: the default article class supports plain (default), empty (no running heads or page numbers), and headings (section titles in running heads)
+
+# paper size, e.g. letter, a4
+papersize: letter
+
+# secnumdepth
+# numbering depth for sections (with --number-sections option or numbersections variable)
+
+# Fonts
+
+# allows font encoding to be specified through fontenc package (with pdflatex); default is T1 (see LaTeX font encodings guide)
+fontenc: T1
+
+# font package for use with pdflatex: TeX Live includes many options, documented in the LaTeX Font Catalogue. The default is Latin Modern.
+fontfamily: tgtermes
+
+# options for package used as fontfamily; repeat for multiple options. For example, to use the Libertine font with proportional lowercase (old-style) figures through the libertinus package:
+# fontfamily: libertinus
+fontfamilyoptions:
+- osf
+- p
+
+# font size for body text. The standard classes allow 10pt, 11pt, and 12pt. To use another size, set documentclass to one of the KOMA-Script classes, such as scrartcl or scrbook.
+fontsize: 11pt
+
+# mainfont, sansfont, monofont, mathfont, CJKmainfont
+# font families for use with xelatex or lualatex: take the name of any system font, using the fontspec package. CJKmainfont uses the xecjk package.
+# mainfontoptions, sansfontoptions, monofontoptions, mathfontoptions, CJKoptions
+# options to use with mainfont, sansfont, monofont, mathfont, CJKmainfont in xelatex and lualatex. Allow for any choices available through fontspec; repeat for multiple options. 
+# For example, to use the TeX Gyre version of Palatino with lowercase figures:
+mainfont: TeX Gyre Pagella
+mainfontoptions:
+- Numbers=Lowercase
+- Numbers=Proportional
+
+# microtypeoptions
+# options to pass to the microtype package
+
+# Links
+
+# add color to link text; automatically enabled if any of linkcolor, filecolor, citecolor, urlcolor, or toccolor are set
+colorlinks: TRUE
+
+# linkcolor, filecolor, citecolor, urlcolor, toccolor
+# color for internal links, external links, citation links, linked URLs, and links in table of contents, respectively: uses options allowed by xcolor, including the dvipsnames, svgnames, and x11names lists
+linkcolor: blue
+toccolor: blue
+
+# links-as-notes
+# causes links to be printed as footnotes
+
+#Front matter
+
+# lof, lot
+# include list of figures, list of tables
+
+# thanks
+# contents of acknowledgments footnote after document title
+
+# include table of contents (can also be set using --toc/--table-of-contents)
+toc: TRUE
+
+# level of section to include in table of contents
+toc-depth: 2
+
+# BibLaTeX Bibliographies
+# These variables function when using BibLaTeX for citation rendering.
+
+# biblatexoptions
+# list of options for biblatex
+
+# biblio-style
+# bibliography style, when used with --natbib and --biblatex.
+
+# biblio-title
+# bibliography title, when used with --natbib and --biblatex.
+
+# bibliography
+# bibliography to use for resolving references
+
+# natbiboptions
+# list of options for natbib

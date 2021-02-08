@@ -1,0 +1,13 @@
+
+documentclass: article
+geometry:
+- margin=1in
+papersize: letter
+fontenc: T1
+fontfamily: tgtermes
+fontsize: 11pt
+colorlinks: TRUE
+linkcolor: blue
+toccolor: blue
+toc: TRUE
+toc-depth: 2
