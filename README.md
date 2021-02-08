@@ -13,34 +13,34 @@ The way to set up a new system follow these instructions:
 
 1. Make sure git is installed.
 2. Make sure you're working in your $HOME directory.
-3. Add the `git df` alias to git: 
-    * `git config --global alias df="!git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
+3. Add the `git d` alias to git:
+    * `git config --global alias d="!git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
     * (or use my [.gitconfig](./.gitconfig) `curl https://raw.githubusercontent.com/maxprehl/dotfiles/master/.gitconfig -o .gitconfig`)
 4. Clone the repo's git directory ONLY:
-    * `git df clone --bare https://github.com/maxprehl/dotfiles.git $HOME/.dotfiles.git`
+    * `git d clone --bare https://github.com/maxprehl/dotfiles.git $HOME/.dotfiles.git`
     * You should now have a new folder in your home directory called `.dotfiles.git`
     * The only thing in there are some other directories that git will use to keep track of the repos.
 5. Set the repo to NOT show untracked files
-    * `git df config --local status.showUntrackedFiles no`
+    * `git d config --local status.showUntrackedFiles no`
     * Since the working directory is $HOME, all subdirectories will show up as untracked, which we DON'T want.
     * Instead we'll just manually add/update the configs we want to track.
 6. Back up offending files
 
     ```sh
-    mkdir -p .dotfiles-backup && \
-    git df checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
-    xargs -I{} mv {} .dotfiles-backup/{}
+    mkdir -p .dotfiles.bak && \
+    git d checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+    xargs -I{} mv {} .dotfiles.bak/{}
     ```
 
 7. Pull down the relevant files. (you may get warnings about overwrites)
-    * `git df checkout <branch>`
+    * `git d checkout <branch>`
     * Look at the next section to figure out which branch you should be using.
 8. You're literally good to go
-    * `git df status` to see any updates
-    * `git df add <file>` to add any new configs to the repo
-    * `git df fetch` to see if there were any updates on the remote
-    * `git df pull` to pull in updates
-    * `git df commit` + `git df push` to add local updates to the remote
+    * `git d status` to see any updates
+    * `git d add <file>` to add any new configs to the repo
+    * `git d fetch` to see if there were any updates on the remote
+    * `git d pull` to pull in updates
+    * `git d commit` + `git d push` to add local updates to the remote
 
 ## THERE ARE MULTIPLE BRANCHES OF THIS REPO
 
@@ -58,8 +58,8 @@ Use the `windows` branch for windows-only systems (although I don't know why you
 - [ ] Customize / Review important dotfiles
     - [x] .gitconfig
     - [x] .vimrc
-    - [ ] .bashrc
-    - [ ] .dircolors
+    - [x] .bashrc
+    - [x] .dircolors
     - [ ] .tmux.conf
     - [ ] .profile?
     - [ ] .profile (powershell)?

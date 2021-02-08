@@ -17,7 +17,7 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # export PATH="/usr/local/lib/node_modules/npm:$PATH"
 # export PATH="$HOME/.npm-global/bin:$PATH"
