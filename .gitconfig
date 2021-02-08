@@ -6,7 +6,7 @@
 	st = status
 	br = branch
 	ci = commit
-	df = !git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME
+	d = !git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME
 # [https]
 #     proxyAuthMethod = basic
 #     sslVerify = false
