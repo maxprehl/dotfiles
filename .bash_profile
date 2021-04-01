@@ -25,6 +25,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 # export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 
+export EDITOR="vim"
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
