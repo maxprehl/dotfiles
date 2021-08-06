@@ -24,7 +24,8 @@ alias \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
-if_os darwin && alias rm="rm -iv"
+
+
 # alias ll='ls -FGlAhp' # Preferred 'ls' implementation
 # alias lsa='ls -al' # Show all file information
 # alias less='less -FSRXc' # Preferred 'less' implementation
@@ -45,11 +46,20 @@ if if_nix gnu && [ -x /usr/bin/dircolors ]; then
     # alias vdir='vdir --color=auto'
 fi
 ## mac/bsd
+if_os darwin && alias rm="rm -iv"
 if_nix bsd &&
     export CLICOLOR=on &&
     export CLICOLORS=on &&
     export LSCOLORS="GxFxCxDxBxegedabagaced" &&
     alias ls='ls -Fh'
+## sun/solaris
+if_os solaris && alias \
+    cp="cp -i" \
+    mv="mv -i" \
+    rm="rm -i" \
+    grep="grep" \
+    egrep="egrep" \
+    fgrep="fgrep"
 
 # These common commands are just too long! Abbreviate them.
 alias \

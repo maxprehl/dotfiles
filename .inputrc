@@ -4,10 +4,24 @@ $include /etc/inputrc
 # https://wiki.archlinux.org/index.php/Readline
 
 set completion-ignore-case On
+set completion-map-case On
 set show-all-if-ambiguous On
+set skip-completed-text On
 
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+# Color files by types
+# Note that this may cause completion text blink in some terminals (e.g. xterm).
+set colored-stats On
+# Append char to indicate type
+set visible-stats On
+# Mark symlinked directories
+# set mark-symlinked-directories On
+# Color the common prefix
+set colored-completion-prefix On
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
 
 ### SET VI MODE IN ALL SHELLS
 # comment out to use emacs mode (the default)
@@ -16,13 +30,19 @@ set editing-mode vi
 $if mode=vi
 
 set show-mode-in-prompt On
-$if term=linux
-	set vi-ins-mode-string \1\e[?0c\2
-	set vi-cmd-mode-string \1\e[?8c\2
-$else
-	set vi-ins-mode-string \1\e[6 q\2
-	set vi-cmd-mode-string \1\e[2 q\2
-$endif
+# $if term=linux
+# set vi-ins-mode-string \1\e[?0c\2
+# 	set vi-cmd-mode-string \1\e[?8c\2
+# $else
+# set vi-ins-mode-string \1\e[5 q\e]12;green\a\2
+# set vi-cmd-mode-string \1\e[1 q\e]12;orange\a\2
+set vi-ins-mode-string \1\e]12;green\a\2
+set vi-cmd-mode-string \1\e]12;orange\a\2
+
+#set vi-ins-mode-string \1\e[5 q\e[32m\a\2
+# set vi-cmd-mode-string \1\e[1 q\2
+# 	set vi-cmd-mode-string \1\e[2 q\2
+# $endif
 
 set keymap vi-command
 # these are for vi-command mode
