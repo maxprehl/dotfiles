@@ -23,7 +23,10 @@
 " ThePrimeagen
 " <https://www.youtube.com/watch?v=n9k9scbTuvQ>
 " <https://github.com/erkrnt/awesome-streamerrc/tree/master/ThePrimeagen>
-
+"
+" Gary Bernhardt
+" <https://github.com/garybernhardt/dotfiles/blob/main/.vimrc>
+"
 
 """"""""""" From Bram 
 " When started as "evim", evim.vim will already have done these settings.
@@ -414,10 +417,49 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
 " Revert with: ":delcommand DiffOrig".
+" if !exists(":DiffOrig")
+"   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+" 		  \ | wincmd p | diffthis
+" endif
+
+" https://www.reddit.com/r/vim/comments/ic48s/view_diff_of_a_modified_file_and_its_original
+" view diff between current buffer and original file it was loaded from
+" nnoremap <Leader>df :call DiffOrig()<CR>
+
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    command DiffOrig call DiffOrig()
 endif
+
+function! DiffOrig()
+    if !exists("b:diff_active") && &buftype == "nofile"
+        echoerr "E: Cannot diff a scratch buffer"
+        return -1
+    elseif expand("%") == ""
+        echoerr "E: Buffer doesn't exist on disk"
+        return -1
+    endif
+
+    if !exists("b:diff_active") || b:diff_active == 0
+        let b:diff_active = 1
+        let l:orig_filetype = &l:filetype
+
+        leftabove vnew
+        let t:diff_buffer = bufnr("%")
+        set buftype=nofile
+
+        read #
+        0delete_
+        let &l:filetype = l:orig_filetype
+
+        diffthis
+        wincmd p
+        diffthis
+    else
+        diffoff
+        execute "bdelete " . t:diff_buffer
+        let b:diff_active = 0
+    endif
+endfunction
 
 if has('langmap') && exists('+langremap')
   " Prevent that the langmap option applies to characters that result from a
