@@ -15,28 +15,29 @@ if_nix () {
 }
 
 # Verbosity and settings that you pretty much just always are going to want.
-alias \
-	cp="cp -iv" \
-    df="df -h" \
-	mv="mv -iv" \
-	rm="rm -vI" \
-	mkd="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
 
+alias \
+    cp="cp -iv" \
+    df="df -h" \
+    mv="mv -iv" \
+    rm="rm -vI" \
+    mkd="mkdir -pv" \
+    yt="youtube-dl --add-metadata -i" \
+    yta="yt -x -f bestaudio/best" \
+    ffmpeg="ffmpeg -hide_banner"
 
 # alias ll='ls -FGlAhp' # Preferred 'ls' implementation
 # alias lsa='ls -al' # Show all file information
 # alias less='less -FSRXc' # Preferred 'less' implementation
 
 # Colorize commands when possible.
+
 alias \
-	grep="grep --color=auto" \
+    grep="grep --color=auto" \
     fgrep='fgrep --color=auto' \
     egrep='egrep --color=auto' \
-	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+    diff="diff --color=auto" \
+    ccat="highlight --out-format=ansi"
 ## gnu/linux
 if if_nix gnu && [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -62,13 +63,22 @@ if_os solaris && alias \
     fgrep="fgrep"
 
 # These common commands are just too long! Abbreviate them.
+
 alias \
     ll='ls -al' \
     g="git" \
-    nr="npm run" \
+    nr="npm run" 
+    # ka="killall" \
+
+# Custom commands
+
+alias \
     path='echo -e ${PATH//:/\\n}' \
     commasplit='awk -v RS=, {$0}' \
     alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-	# ka="killall" \
+    # Usage for alert, ex. `$ sleep 10; alert`
 
-# Usage for alert, ex. `$ sleep 10; alert`
+# Modern substitutes
+
+[ -x /usr/bin/batcat ] && alias cat='batcat'
+

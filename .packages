@@ -1,0 +1,17 @@
+vim git wget ssh rsync
+
+vsftpd ftp
+
+python3 python3-pip python3-venv
+
+nodejs npm
+
+debsecan apt-listbugs
+
+texlive-latex-extra pandoc
+
+racket
+
+bat neofetch ffmpeg yt-dlp 
+
+man-db
