@@ -65,7 +65,7 @@ if_os solaris && alias \
 # These common commands are just too long! Abbreviate them.
 
 alias \
-    ll='ls -al' \
+    ll='ls -alv' \
     g="git" \
     nr="npm run" 
     # ka="killall" \
