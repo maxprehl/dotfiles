@@ -3,9 +3,17 @@ $include /etc/inputrc
 # bash READLINE
 # https://wiki.archlinux.org/index.php/Readline
 
+# Completions
+# When performing tab completion, a single tab attempts to partially complete the current word. 
+# If no partial completions are possible, a double tab shows all possible completions.
+
+# The double tab can be changed to a single tab by setting:
+set show-all-if-unmodified On
+# Or you can set it such that a single tab will perform both steps: partially complete the word and show all possible completions if it is still ambiguous:
+# set show-all-if-ambiguous On
+
 set completion-ignore-case On
 set completion-map-case On
-set show-all-if-ambiguous On
 set skip-completed-text On
 
 "\e[A": history-search-backward
