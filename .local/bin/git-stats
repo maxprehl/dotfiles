@@ -1,0 +1,1 @@
+git log --no-merges --pretty=format:%aE --numstat | awk '/./ && !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = ""; next } END { for (a in ins) { printf "%10d net %10d insertions %10d deletions \t%s\n", ins[a] - del[a], ins[a], del[a], a} }'

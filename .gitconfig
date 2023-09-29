@@ -1,12 +1,13 @@
 [user]
 	name = Max Prehl
-	email = 39207309+maxprehl@users.noreply.github.com
+	email = max.prehl@sapphirek12.com
 [alias]
 	co = checkout
 	st = status
 	br = branch
 	ci = commit
 	d = !git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME
+	stats = !sh $HOME/.local/bin/git-stats
 # [https]
 #     proxyAuthMethod = basic
 #     sslVerify = false
