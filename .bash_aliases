@@ -1,7 +1,9 @@
+#!/bin/bash
 # .bash_aliases
 #
 # MAINTAINER: Max Prehl
 # UPDATED: Nov. 19, 2020
+# UPDATED: 2024-03-14, ls -k on gnu
 
 # Define os & *nix from https://stackoverflow.com/a/29239609
 if_os () { [[ $OSTYPE == *$1* ]]; } # linux darwin msys bsd solaris
@@ -42,7 +44,7 @@ alias \
 if if_nix gnu && [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     # export LS_COLORS="di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=34;43"
-    alias ls='ls -FhN --color=auto --group-directories-first'
+    alias ls='ls -FhvN --color=auto --group-directories-first'
     # alias dir='dir --color=auto'
     # alias vdir='vdir --color=auto'
 fi
