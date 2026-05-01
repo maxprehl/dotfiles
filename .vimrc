@@ -1,31 +1,23 @@
-
+#!/usr/bin/env vim
 " .vimrc
 "
 " MAINTAINER: Max Prehl
 " UPDATED: Jul. 28, 2020
 "
-" I've taken from several sources, and did my own stuff.  
-" Some inspiration:
-" 
-" http://vim.wikia.com/wiki/Example_vimrc
-" 
+" Inspiration:
 " Bram Moolenaar <Bram@vim.org>
-" 
-" Kurt Schmidt <kschmidt>
-"
-" Derek Taylor (DistroTube) 
-" <https://gitlab.com/dwt1/dotfiles/-/blob/master/.vimrc>
-"
+" Kurt Schmidt <kschmidt@drexel.edu>
+" vim.wikia <http://vim.wikia.com/wiki/Example_vimrc>
+" Derek Taylor (DistroTube)
+" - <https://gitlab.com/dwt1/dotfiles/-/blob/master/.vimrc>
 " Max Cantor (thoughtbot, Vim without plugins)
-" <https://www.youtube.com/watch?v=XA2WjJbmmoM>
-" <https://github.com/changemewtf/no_plugins>
-"
+" - <https://www.youtube.com/watch?v=XA2WjJbmmoM>
+" - <https://github.com/changemewtf/no_plugins>
 " ThePrimeagen
-" <https://www.youtube.com/watch?v=n9k9scbTuvQ>
-" <https://github.com/erkrnt/awesome-streamerrc/tree/master/ThePrimeagen>
-"
+" - <https://www.youtube.com/watch?v=n9k9scbTuvQ>
+" - <https://github.com/erkrnt/awesome-streamerrc/tree/master/ThePrimeagen>
 " Gary Bernhardt
-" <https://github.com/garybernhardt/dotfiles/blob/main/.vimrc>
+" - <https://github.com/garybernhardt/dotfiles/blob/main/.vimrc>
 "
 
 """"""""""" From Bram 
@@ -41,10 +33,9 @@ if exists('skip_defaults_vim')
   finish
 endif
 
-
 """"""""""" vim.wikia 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Features {{{1
+" Features:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
@@ -80,14 +71,12 @@ silent! endwhile
 " Revert with ":filetype off".
 filetype indent plugin on
 
-""""""""""" vim.wikia 
-" Enable syntax highlighting
-"syntax on
-
 """"""""""" Bram 
 " Switch syntax highlighting on when the terminal has colors or when using the
 " GUI (which always has colors).
 if &t_Co > 2 || has("gui_running")
+  """"""""""" vim.wikia 
+  " Enable syntax highlighting
   " Revert with ":syntax off".
   syntax on
 
@@ -96,13 +85,12 @@ if &t_Co > 2 || has("gui_running")
   let c_comment_strings=1
 endif
 
-
 """"""""""" vim.wikia 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Must have options {{{1
+" Must Have Options:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These are highly recommended options.
- 
+
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
 " tab pages to edit multiple files, but it is still best to enable an option to
@@ -117,7 +105,7 @@ endif
 " try to quit without saving, and swap files will keep you safe if your computer
 " crashes.
 set hidden
- 
+
 " Note that not everyone likes working this way (with the hidden option).
 " Alternatives include using tabs or split windows instead of re-using the same
 " window as mentioned above, and/or either of the following options:
@@ -125,7 +113,12 @@ set hidden
 " set autowriteall
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" FINDING FILES
+" FINDING FILES:
+""""""""""" Cantor
+" Quick Reference:
+" - Hit "tab" to ":find" by partial match
+" - Use "*" to make it fuzzy
+" - ":b" lets you autocomplete any open buffer
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""" Derek, Cantor
@@ -140,39 +133,30 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu 
 
-""""""""""" Cantor
-" NOW WE CAN:
-" - Hit tab to :find by partial match
-" - Use * to make it fuzzy
-" THINGS TO CONSIDER:
-" - :b lets you autocomplete any open buffer
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TAG JUMPING:
+""""""""""" Cantor
+" Quick Reference:
+" - Use "^]" to jump to tag under cursor
+" - Use "g^]" for ambiguous tags
+" - Use "^t" to jump back up the tag stack
+" - This doesn't help if you want a visual list of tags
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Create the `tags` file (may need to install ctags first)
 command!  MakeTags !ctags -R .
 
-" NOW WE CAN:
-" - Use ^] to jump to tag under cursor
-" - Use g^] for ambiguous tags
-" - Use ^t to jump back up the tag stack
-" THINGS TO CONSIDER:
-" - This doesn't help if you want a visual list of tags
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AUTOCOMPLETE:
+""""""""""" Cantor
+" Quick Reference:
+" - "^x^n" for JUST this file
+" - "^x^f" for filenames (works with our path trick!)
+" - "^x^]" for tags only
+" - "^n" for anything specified by the 'complete' option
+" - Use "^n" and "^p" to go back and forth in the suggestion list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The good stuff is documented in |ins-completion|
-
-" HIGHLIGHTS:
-" - ^x^n for JUST this file
-" - ^x^f for filenames (works with our path trick!)
-" - ^x^] for tags only
-" - ^n for anything specified by the 'complete' option
-
-" NOW WE CAN:
-" - Use ^n and ^p to go back and forth in the suggestion list
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " OTHER:
@@ -182,15 +166,13 @@ command!  MakeTags !ctags -R .
 " Show partial commands in the last line of the screen
 " display incomplete commands
 set showcmd
- 
-""""""""""" vim.wiki 
-" Highlight searches (use <C-L> to temporarily turn off highlighting; see the
-" mapping of <C-L> below)
-"set hlsearch
 
 """"""""""" Bram
 if &t_Co > 2 || has("gui_running")
   " Switch on highlighting the last used search pattern.
+  """"""""""" vim.wiki 
+  " Highlight searches (use "<C-L>" to temporarily turn off highlighting; see the
+  " mapping of <C-L> below)
   set hlsearch
 endif
 
@@ -200,7 +182,7 @@ endif
 " set nomodeline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Display / Interface
+" Display And Interface:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""" vim.wiki 
@@ -210,7 +192,7 @@ set number
 """"""""""" vim.wiki 
 " Use visual bell instead of beeping when doing something wrong
 set visualbell
- 
+
 """"""""""" vim.wiki 
 " And reset the terminal code for the visual bell. If visualbell is set, and
 " this line is also included, vim will neither flash nor beep. If visualbell
@@ -222,7 +204,7 @@ set visualbell
 " line of a window
 " show the cursor position all the time
 set ruler
- 
+
 """"""""""" vim.wiki 
 " Always display the status line, even if only one window is displayed
 set laststatus=2
@@ -232,73 +214,75 @@ set laststatus=2
 " "press <Enter> to continue"
 set cmdheight=2
 
+" maxprehl's colorscheme
+" https://vi.stackexchange.com/a/48644/60540
+colorscheme default
+set background=dark
+highlight Comment ctermfg=DarkGray guifg=#555555
+" u/Allan-H <https://www.reddit.com/r/vim/comments/1k7z02o/comment/mp2zav4/>
+hi whitespacewarning ctermbg=52 guibg=orange
+match whitespacewarning /\t\|\s\+$/
+
 """"""""""" ThePrimeagen 
 " Visual differentiation for the 80 (and 120) character mark
 set colorcolumn=80,120
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=233 guibg=#121212
 
 """"""""""" vim.wiki 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Usability options {{{1
+" Usability Options:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These are options that users frequently set in their .vimrc. Some of them
 " change Vim's behaviour in ways which deviate from the true Vi way, but
 " which are considered to add usability. Which, if any, of these options to
 " use is very much a personal preference, but they are harmless.
- 
+
 """"""""""" vim.wiki 
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
- 
+
 """"""""""" vim.wiki, Bram
-" Allow backspacing over autoindent, line breaks and start of insert action
+" Allow backspacing over indent, line breaks and start of insert action
 " Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
- 
-""""""""""" vim.wiki 
-" When opening a new line and no filetype-specific indenting is enabled, keep
-" the same indent as the line you're currently on. Useful for READMEs, etc.
-set autoindent
- 
+
 """"""""""" vim.wiki 
 " Stop certain movements from always going to the first character of a line.
 " While this behaviour deviates from that of Vi, it does what most users
 " coming from other editors would expect.
 set nostartofline
- 
+
 """"""""""" vim.wiki 
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
- 
+
 """"""""""" vim.wiki 
 " Enable use of the mouse for all modes
 "set mouse=a
 
-""""""""""" Derek
-" Mouse Scrolling
-set mouse=nicr
- 
+""""""""""" Derek, maxprehl
+" Mouse Scrolling in Normal, Insert modes
+" Disabled in Visual, Command, hit-enter, more-prompt modes 
+set mouse=ni
+
 """"""""""" vim.wiki, Bram 
 " Quickly time out on keycodes, but never time out on mappings
 " ttimeout		" time out for key codes
 " ttimeoutlen=100	" wait up to 100ms after Esc for special key
 set notimeout ttimeout ttimeoutlen=200
- 
+
 """"""""""" vim.wiki 
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
-
- 
-
 """"""""""" vim.wiki 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Indentation options {{{1
+" Indentation Options:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation settings according to personal preference.
- 
+
 """"""""""" vim.wiki 
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
@@ -306,33 +290,36 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-""""""""""" Derek 
-" Be smart when using tabs ;)
-set smarttab
- 
 """"""""""" vim.wiki 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
 "set shiftwidth=4
 "set tabstop=4
- 
+
+""""""""""" vim.wiki 
+" When opening a new line and no filetype-specific indenting is enabled, keep
+" the same indent as the line you're currently on. Useful for READMEs, etc.
+set autoindent
+
+""""""""""" Derek 
+" Be smart when using tabs ;)
+set smarttab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mappings {{{1
+" Mappings:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Useful mappings
- 
+
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
- 
+
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" The Rest of Bram's Defaults {{{1
+" The Rest Of Bram_s Defaults:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set history=200		" keep 200 lines of command line history
 
@@ -342,7 +329,6 @@ set display=truncate
 " Show a few lines of context around the cursor.  Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
-
 
 """"""""""" Bram, Derek 
 " Do incremental searching when it's possible to timeout.
@@ -381,12 +367,10 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
   " Put these in an autocmd group, so that you can revert them with:
   " ":augroup vimStartup | au! | augroup END"
   augroup vimStartup
     au!
-
     " When editing a file, always jump to the last known cursor position.
     " Don't do it when the position is invalid, when inside an event handler
     " (happens when dropping a file on gvim) and for a commit message (it's
@@ -395,22 +379,14 @@ if has("autocmd")
       \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
       \ |   exe "normal! g`\""
       \ | endif
-
   augroup END
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
     au!
-
     " For all text files set 'textwidth' to 78 characters.
     autocmd FileType text setlocal textwidth=78
-
   augroup END
-
-else
-
-  set autoindent		" always set autoindenting on
-
 endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
